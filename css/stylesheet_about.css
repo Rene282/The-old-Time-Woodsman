@@ -1,0 +1,73 @@
+body {
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  background-position: fixed;
+  background-size: cover;
+  max-width: 100%;
+}
+h3 {
+  color: white;
+}
+
+#all {
+  color: white;
+}
+
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+
+#images {
+  text-align: center;
+}
+
+.topnav {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.navbar-brand {
+  font-weight: bold !important;
+}
+
+.dropdown {
+  color: black !important;
+  position: absolute !important;
+  right: 5%;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(77, 77, 77, 0.151);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.container {
+  color: black;
+}
+
+.navcont {
+  box-shadow: 0px 6px 14px -5px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 0px 6px 14px -5px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 6px 14px -5px rgba(0, 0, 0, 0.49);
+  background-color: rgba(255, 255, 255, 0.281);
+}

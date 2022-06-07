@@ -2,7 +2,8 @@
 <html>
     <head>
         <title> The old Time Woodsman </title>
-        <link rel = "stylesheet" href = "stylesheet_about.css">
+        <link rel = "stylesheet" href = "./css/stylesheet_about.css">
+        <link rel = "stylesheet" href = "./css/stylesheet.css">
         <!-- MDB -->
         <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -15,14 +16,45 @@
         ></script>
     </head>
 
-    <div class="topnav">
-        <a href="Home.html">Home</a>
-        <a class="active" href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
-        <a href="#purchase">Purchase</a>
-        <a href="Login_Register.html"> Login/Register </a>
+    <header>
+      <div class="navcont">
+        <nav class=" topnav navbar navbar-light navbar-expand-lg ">
+          <div class="container">
+          <a class="navbar-brand" href="Home.html">Old Time Woodsman</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Purchase.html">Payment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       </div>
-
+    </header>
+<body>
+  <br>
     <div class="container">
         <h2>About Us</h2>
         <h4>We create a completely custom product for each customer.</h4>
@@ -30,15 +62,15 @@
         <div class="row">
             <div class="col-md-4">
                 <h3>Desks</h3>
-                <img src="D:\The old Time Woodsman\desk.jpeg"  width="350" height="333" />
+                <img src="./images/desk.jpeg"  width="350" height="333" />
             </div>
             <div class="col-md-4">
                 <h3>Shelves</h3>
-                <img src="D:\The old Time Woodsman\bookshelf.jpeg"  width="350" height="333"/>
+                <img src="./images/bookshelf.jpeg"  width="350" height="333"/>
             </div>
             <div class="col-md-4">
                 <h3>Coffee Tables</h3>
-                <img src="D:\The old Time Woodsman\table.jpeg"  width="350" height="333"/>
+                <img src="./images/table.jpeg"  width="350" height="333"/>
             </div>
         </div>
     </div>
@@ -46,15 +78,15 @@
         <div class="row">
             <div class="col-md-4">
                 <h3>Cupboards</h3>
-                <img src="D:\The old Time Woodsman\kitchen.jpeg"  width="350" height="333"/>
+                <img src="./images/kitchen.jpeg"  width="350" height="333"/>
             </div>
             <div class="col-md-4">
                 <h3>Pergola's</h3>
-                <img src="D:\The old Time Woodsman\patio.jpeg"  width="350" height="333"/>
+                <img src="./images/patio.jpeg"  width="350" height="333"/>
             </div>
             <div class="col-md-4">
                 <h3>Bed Frames</h3>
-                <img src="D:\The old Time Woodsman\bed_cover.jpeg"  width="350" height="333"/>
+                <img src="./images/bed_cover.jpeg"  width="350" height="333"/>
             </div>
         </div>
     </div>
@@ -62,15 +94,22 @@
         <div class="row">
             <div class="col-md-4">
                 <h3>Bar's</h3>
-                <img src="D:\The old Time Woodsman\table_counter.jpeg"  width="350" height="333"/>
+                <img src="./images\table_counter.jpeg"  width="350" height="333"/>
             </div>
             <div class="col-md-4">
                 <h3>Dining Room Sets</h3>
-                <img src="D:\The old Time Woodsman\dining_room.jpeg"  width="350" height="333"/>
+                <img src="./images\dining_room.jpeg"  width="350" height="333"/>
             </div>
             <div class="col-md-4">
                 <h3>Mirror Cabinets</h3>
-                <img src="D:\The old Time Woodsman\mirror_cabinets.jpeg"  width="350" height="333"/>
+                <img src="./images\mirror_cabinets.jpeg"  width="350" height="333"/>
             </div>
         </div>
     </div>
+    </body>
+    <br>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="text-center">
+        <small>Old Time Woodsman by Rene van Zyl</small>
+      </div>
+    </footer>
