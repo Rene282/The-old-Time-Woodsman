@@ -2,59 +2,108 @@
 <html>
     <head>
         <title> The old Time Woodsman </title>
-        <link rel = "stylesheet" href = "stylesheet_about.css">
+        <link rel = "stylesheet" href = "./css/stylesheet_about.css">
+        <!-- MDB -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        ></script>
     </head>
+    <header>
+        <div class="navcont">
+          <nav class=" topnav navbar navbar-light navbar-expand-lg ">
+            <div class="container">
+            <a class="navbar-brand" href="Home.html">Old Time Woodsman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="Purchase.html">Payment</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+      </header>
     <body>
-        <div class="topnav">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <a class="active" href="Contact.html">Contact</a>
-            <a href="Purchase.html">Purchase</a>
-            <a href="Login_Register.html"> Login/Register </a>
-
+        <br>
         </div>
             <div id="all">
-              <div>
-                  <h1> Contact us</h1>
-                  <h3> Contact number: 018 771 4589
-                  </br>
-                        Email: theoldtimewoodsman@pihe.co.za.
-                </br>
-                        Office hours: Mon-Fri 8AM - 5PM
-                        </h3>
-                </div>
-
-                <div>
-                    <h1> Find us as: </h1>
-
-                </div>
-
-                
-                    <div class="mapouter">
-                        <div class="gmap_canvas">
-                            <iframe text-align = "center" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=die%20hout%20fabriek&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-                            </iframe>
-                            <a href="https://putlocker-is.org">
-
-                            </a>
-                            <br>
-                            <style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">
-
-                            </a>
-                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
-                        </div>
+                <div class="container contact-form rounded">
+                    <div class="contact-image">
+                        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
                     </div>
+                    <form method="post">
+                        <h3>Drop Us a Message</h3>
+                       <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+        </div>
+        <div class="mapouter">
+            <h1>Our Location: </h1>
+            <div class="gmap_canvas">
+                <iframe text-align = "center" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=die%20hout%20fabriek&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 
-                </br>
+                </iframe>
+                <a href="https://putlocker-is.org">
 
-                <div>
-                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-                        Have a comment? Leave it here!
-                        </textarea>
-                </div>
+                </a>
+                <br>
+                <style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">
 
-                <div id="button">
-                    <button type="submit" value="Submit">Submit</button>
+                </a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+            </div>
+        </div>
 
         </div>
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+            <div class="text-center">
+              <small>Old Time Woodsman by Rene van Zyl</small>
+            </div>
+          </footer>
